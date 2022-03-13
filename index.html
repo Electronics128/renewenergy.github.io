@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Renewable Energy"
+      content="What is Renewable Energy?"
+    />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:image" content="http://" />
+    <meta property="og:url" content="" />
+    <title>Renewable Energy</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=MuseoModerno:wght@800&family=Poppins:wght@400;700&family=Sora:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <section class="showcase">
+			<div class="video-container">
+				<video src="videos/Renewable.mp4" autoplay muted loop></video>
+			</div>
+			<div class="content">
+				<h1>Renewable Energy</h1>
+				<a href="#Main" class="btn">Learn More</a>
+      </div>
+    </section>
+  </head>
+  <body >
+     <div id="Main"> 
+      <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#129145</button>
+
+      <div class="topnav" id="myTopnav">
+        <a href="#main" class="active">Home</a>
+        <a href="solar.html">Solar</a>
+        <a href="wind.html">Wind</a>
+        <a href="hydro.html">Hydro</a>
+        <a href="#">Citations</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+      
+    
+    <header>
+
+    </header>
+    <section id="main" data-aos="fade-up" class="block container block-domain">
+      <header class="block__header">
+        <h2>What are renewable sources?</h2>
+        <p>
+          Renewable sources are types of energy that is clean and that does not harm the enviroment
+        </p>
+      </header>
+    </section>
+    <section  data-aos="fade-up" class="block container block-plans">
+      <div class="grid grid--1x3">
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Never run out of electricity!</h3>
+              <span class="plan__price">Solar</span>
+              <span class="plan__billing-cycle">energy</span>
+              <span class="plan__description"></span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Enviormental Benifits</li>
+                <li class="list__item">Improved Public Health</li>
+                <li class="list__item">Inexhaustable Energy</li>
+                <li class="list__item">New Jobs</li>
+              </ul>
+              <a href="#solar" class="btn1 btn--outline1 btn--block1">Learn More!</a>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan--popular">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">A great choice when windy!</h3>
+              <span class="plan__price">Wind</span>
+              <span class="plan__billing-cycle">energy</span>
+              <span class="plan__description"></span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Cost Effective</li>
+                <li class="list__item">New Jobs</li>
+                <li class="list__item">Enables industry growth</li>
+                <li class="list__item">Sustainable</li>
+              </ul>
+              <a href="#wind" class="btn1 btn--outline1 btn--block1">Learn More!</a>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Best in large commercial dams</h3>
+              <span class="plan__price">Hydro</span>
+              <span class="plan__billing-cycle">energy</span>
+              <span class="plan__description"></span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Benefits beyond electricity</li>
+                <li class="list__item">Recreational opportunities</li>
+                <li class="list__item">Increased Reliability</li>
+                <li class="list__item">Low cost to run</li>
+              </ul>
+              <a href="#water" class="btn1 btn--outline1 btn--block1">Learn More!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2>How does each innovation work?</h2>
+        <p>
+          The text below explains how each technology works
+        </p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" id="wind" data-aos="fade-right">
+          <h3 class="feature__heading">HOW DOES A WINDMILL PRODUCE ELECTRICITY?</h3>
+          <p>
+              The aerodynamic force of the blades,like a airplane, converts wind energy into electricity in a wind turbine. The air pressure on one side of the blade lowers when wind blows across it. Lift and drag are created by the difference in air pressure across the two sides of the blade. The lift force is greater than the drag force, causing the rotor to spin. The blades are attached to a drive shaft that rotates an electric generator, which provides power.
+          </p>
+          <a href="wind.html" class="link-arrow">Find out more on Wind Energy</a>
+        </div>
+        <picture data-aos="zoom-in-left">
+          <source
+            type="image/webp"
+            srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
+          />
+          <img class="feature__image" src="images/easy@2x.jpg" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div id="solar" class="feature__content"  data-aos="fade-right">
+        <div class="feature__content">
+          <h3 class="feature__heading">HOW DO WE HARNESS ENERGY FROM THE SUN?</h3>
+          <p>
+            In an hour and a half, the amount of sunshine that penetrates the earth's surface is enough to power the entire world's energy usage for a year. Photovoltaic (PV) panels or mirrors that concentrate solar radiation are used in solar technologies to convert sunlight into electrical energy. This energy can be converted into electricity or stored in a battery for long term usage.
+          </p>
+          <a href="solar.html" class="link-arrow">Learn More about solar energy</a>
+        </div>
+      </div>
+        <picture data-aos="zoom-in-right">
+          <source
+            type="image/webp"
+            srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x"
+          />
+          <img class="feature__image" src="images/fast@2x.jpg" alt="" />
+        </picture>
+      </article>
+    </div>
+
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" id="water" data-aos="swing">
+        <div class="feature__content">
+          <h3 class="feature__heading">HOW DO WE GET ENERGY FROM WATER?</h3>
+          <p>
+            Hydroelectric power stations are frequently built on or near a water source because water is the source of hydroelectric power. The amount of accessible energy in moving water is determined by the volume of the water flow and the change in elevation—or fall, as it is commonly known to as head—from one location to another. In general, the higher the head and the greater the water flow, the more electricity a hydropower plant can generate.</p>
+          <a href="#" class="link-arrow">Learn More on how to implement hydro power!</a>
+        </div>
+      </div>
+        <picture data-aos="zoom-in-left">
+          <source
+            type="image/webp"
+            srcset="images/hydro.webp 1x, images/hydro@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/hydro.jpg 1x, images/hydro@2x.jpg 2x"
+          />
+          <img class="feature__image" src="images/hydro@2x.jpg" alt="" />
+        </picture>
+      </article>
+    </section>
+    <section class="block block--part2 block--skewed-right block-showcase">
+      <header class="block__header">
+        <h2>Cool Facts about Renewable Energy!</h2>
+      </header>
+      <div id="windmi" class="container grid grid--1x2">
+        <picture data-aos="fade-right" class="block-showcase__image">
+          <source
+            type="image/webp"
+            srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
+          />
+          <img src="images/ipad.png" alt="Image of a windmill and solar panels during a sunset" />
+        </picture>
+        <ul class="list" data-aos="fade-up">
+          <li>
+            <div class="media">
+              
+              <div class="media__body">
+                <h3 class="media__title">Wind</h3>
+                <p>
+                  Turbines are becoming taller in order to reach higher in the atmosphere, where quicker, more consistent winds can be found. The higher you fly, the faster the winds will be and the more energy you'll be able to generate!
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+                <div class="media__body">
+                <h3 class="media__title">
+                  Hydro
+                </h3>
+                <p>
+                  Hydropower costs less than most energy sources. States that get the majority of their electricity from hydropower, like Idaho, Washington, and Oregon, have energy bills that are lower than the rest of the country.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__body">
+                <h3 class="media__title">Solar</h3>
+                <p>
+                  WORLD HEALTH BENEFITS FROM SOLAR POWER
+                  According to Google's Project Sunroof, which combines data from Google Maps and Google Earth with 3D modeling and machine learning, 79 percent of all homes in America have rooftops that are "technically viable" for solar, meaning they have enough roof area and receive enough sunlight.                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <div class="container">
+      <div class="callout callout--primary callout-signup">
+        <div class="grid grid--1x2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Sources</h2>
+            <p>
+              Follow this link to see my sources and citations used for this project!
+            </p>
+          </div>
+          <a href="#" class="btn btn--secondary btn--stretched">Click Me!</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Lorem, ipsum dolor.</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Lorem, ipsum.</a></li>
+              <li><a href="#">Lorem, ipsum dolor.</a></li>
+              <li><a href="#">Lorem.</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Lorem</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Lorem, ipsum.</a></li>
+              <li><a href="#">Lorem, ipsum.</a></li>
+              <li><a href="#">Lorem2</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Lorem</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Lorem, ipsum.</a></li>
+              <li><a href="#">Lorem, ipsum.</a></li>
+              <li><a href="#">Lorem, ipsum.</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Lorem</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__brand">
+          <img src="" alt="" />
+          <p class="footer__copyright">Lorem, ipsum dolor.</p>
+        </div>
+      </div>
+
+      </footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
