@@ -19,20 +19,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=MuseoModerno:wght@800&family=Poppins:wght@400;700&family=Sora:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hydro.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   <body onmousedown="return false" onselectstart="return false">
-
+ <body>
       </head>
-      <button onclick="topFunction()" id="myBtn" title="Go to top">&#129145</button>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="material-icons-outlined">
+        keyboard_capslock
+        </span></button>
 
       <div class="topnav" id="myTopnav">
         <a href="index.html" class="active">Home</a>
         <a href="solar.html">Solar</a>
         <a href="wind.html">Wind</a>
         <a href="hydro.html">Hydro</a>
-        <a href="#">Citations</a>
+        <a href="citations.html">Citations</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -77,18 +82,15 @@
       <header class="block__header">
         <h2>What Can Hydroelectric Power Do?</h2>
         <p>
-          Hydropower converts kinetic energy into electricity using turbines and generators, which is then supplied into the electrical grid to power homes, companies, and industries.      </header>
-        </p>
+          Hydropower converts kinetic energy into electricity using turbines and generators. They are then supplied to the electrical grid to power homes, companies, and industries.          </p>
           <article class="grid grid--1x2 feature">
-        <div class="feature__content" id="wind" data-aos="fade-right", data-aos-offset="300", data-aos-easing="ease-in-sine">
+        <div class="feature__content" id="wind">
           <h3 class="feature__heading">How Hydroelectric Energy has evolved</h3>
           <p>
-            More than 2,000 years ago, the Greeks employed water wheels to crush wheat into flour, while the Egyptians utilized Archimedes water screws for irrigation in the third century B.C. Bernard Forest de Bélidor, a French hydraulic and military engineer, wrote the seminal Architecture Hydraulique in the mid-1700s, which paved the way for the modern hydropower turbine. 
+            More than 2,000 years ago, the Greeks employed water wheels to crush wheat into flour. Meanwhile, the Egyptians utilized Archimedes' water screws for irrigation in the third century BCE. Bernard Forest de Bélidor, a French hydraulic and military engineer, wrote the seminal Architecture Hydraulique in the mid-1700s, which paved the way for the modern hydropower turbine. 
           </p>
         </div>
-        <picture data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">
+        <picture>
           <source
             type="image/webp"
             srcset="images/dam.webp 1x, images/dam@2x.webp 2x"
@@ -105,12 +107,12 @@
         <div class="feature__content">
           <h3 class="feature__heading">How to Plan for a Microhydropower System</h3>
           <p>
-            You'll need flowing water on your land to develop a micro-hydropower system. A substantial amount of falling water is required, which usually, but not always, indicates that hilly or mountainous locations are the best. A potential micro-hydropower site's power output, economics, permits, and water rights are all factors to consider.
-            To discover if a micro-hydropower system is right for you, you'll need to figure out how much power you can get from the running water on your property. This entails determining the following two factors:
+            You'll need flowing water on your land to develop a micro-hydropower system. A substantial amount of falling water is required, but not always. Hilly or mountainous locations are the best. A potential micro-hydropower site's power output, economics, permits, and water rights are all factors to consider.
+            To discover if a micro-hydropower system is right for you, you'll need to figure out how much power you can get from the running water on your property. This entails two main factors:
           </p>
           <ul>
-            <li>Head -- the vertical distance the water falls</li>
-            <li>Flow -- the quantity of water falling</li>
+            <li class="c">Head -- the vertical distance the water falls</li>
+            <li class="c">Flow -- the quantity of water falling</li>
           </ul>
         </div>
       </div>
@@ -134,21 +136,21 @@
         <div class="feature__content" id="water" data-aos="fade-right"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine">
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">
         <div class="feature__content">
           <h3 class="feature__heading">Maintenance</h3>
           <p>
-            Despite the fact that a hydropower plant is designed to endure decades, harsh weather and typical wear and tear do take their toll on its many components:            <ul>
-              <li>Turbines suffer abrasions from suspended solids.</li>
-              <li>Metals are more prone to corrosion in the watery environment.</li>
-              <li>High pressure, stress cycles, and water hammers often cause fatigue cracking.</li>
-              <li>Unbalanced and misaligned shafts cause vibration and wear out bearings.</li>
+            Although a hydropower plant is designed to endure decades of harsh weather, typical wear and tear do take their toll on many main components:               
+            <ul>     
+              <li class="c">Turbines suffer abrasions from suspended solids.</li>
+              <li class="c">Metals are more prone to corrosion in the watery environment.</li>
+              <li class="c">High pressure, stress cycles, and water hammers often cause fatigue cracking.</li>
+              <li class="c">Unbalanced and misaligned shafts cause vibration and wear out bearings.</li>
             </ul>      
            </p>
            <p>Therefore it is a must to get it serviced based on the table on the right.</p>
         </div>
       </div>
+      <div style="overflow-x: auto;">
         <table data-aos="fade-left"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine">
@@ -181,6 +183,7 @@
             <td>Please contact your local hydropower technicians for more info on Larger Systems</td>
           </tr>
         </table>
+      </div>
       </article>
     </section>
 

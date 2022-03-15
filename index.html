@@ -14,10 +14,12 @@
     <meta property="og:url" content="" />
     <title>Renewable Energy</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alata&family=MuseoModerno:wght@800&family=Poppins:wght@400;700&family=Sora:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=MuseoModerno:wght@800&family=Poppins:wght@400;700&family=Sora:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     <section class="showcase">
 			<div class="video-container">
@@ -29,17 +31,20 @@
       </div>
     </section>
   </head>
-  <body >
+ <body onmousedown="return false" onselectstart="return false">
+  
      <div id="Main"> 
       <body>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">&#129145</button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="material-icons-outlined">
+          keyboard_capslock
+          </span></button>
 
       <div class="topnav" id="myTopnav">
         <a href="#main" class="active">Home</a>
         <a href="solar.html">Solar</a>
         <a href="wind.html">Wind</a>
         <a href="hydro.html">Hydro</a>
-        <a href="#">Citations</a>
+        <a href="citations.html">Citations</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -75,11 +80,13 @@
       <header class="block__header">
         <h2>What are renewable sources?</h2>
         <p>
-          Renewable sources are types of energy that is clean and that does not harm the enviroment
+          Renewable energy, often known as clean energy, is obtained from natural sources or processes that are replenished on a frequent basis.
         </p>
       </header>
     </section>
-    <section  data-aos="fade-up" class="block container block-plans">
+    <section  data-aos="flip-up"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="1000" class="block container block-plans">
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
@@ -91,12 +98,12 @@
             </header>
             <div class="card__body">
               <ul class="list list--tick">
-                <li class="list__item">Enviormental Benifits</li>
+                <li class="list__item">Environmental Benefits</li>
                 <li class="list__item">Improved Public Health</li>
-                <li class="list__item">Inexhaustable Energy</li>
+                <li class="list__item">Inexhaustible Energy</li>
                 <li class="list__item">New Jobs</li>
               </ul>
-              <a href="#solar" class="btn1 btn--outline1 btn--block1">Learn More!</a>
+              <a href="#solar" class="btn1 btn--outline1 btn--block1 btn-grad">Learn More!</a>
             </div>
           </div>
         </div>
@@ -115,7 +122,7 @@
                 <li class="list__item">Enables industry growth</li>
                 <li class="list__item">Sustainable</li>
               </ul>
-              <a href="#wind" class="btn1 btn--outline1 btn--block1">Learn More!</a>
+              <a href="#wind" class="btn1 btn--outline1 btn--block1 btn-grad">Learn More!</a>
             </div>
           </div>
         </div>
@@ -134,7 +141,7 @@
                 <li class="list__item">Increased Reliability</li>
                 <li class="list__item">Low cost to run</li>
               </ul>
-              <a href="#water" class="btn1 btn--outline1 btn--block1">Learn More!</a>
+              <a href="#water" class="btn1 btn--outline1 btn--block1 btn-grad">Learn More!</a>
             </div>
           </div>
         </div>
@@ -142,21 +149,26 @@
     </div>
     </section>
     <section class="block container">
-      <header class="block__header">
+      <header class="block__header" data-aos="fade-up"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
         <h2>How does each innovation work?</h2>
         <p>
           The text below explains how each technology works
         </p>
       </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content" id="wind" data-aos="fade-right">
-          <h3 class="feature__heading">HOW DOES A WINDMILL PRODUCE ELECTRICITY?</h3>
+        <div class="feature__content" id="wind" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+          <h3 class="feature__heading">How does a wind turbine produce electricity?</h3>
           <p>
-              The aerodynamic force of the blades,like a airplane, converts wind energy into electricity in a wind turbine. The air pressure on one side of the blade lowers when wind blows across it. Lift and drag are created by the difference in air pressure across the two sides of the blade. The lift force is greater than the drag force, causing the rotor to spin. The blades are attached to a drive shaft that rotates an electric generator, which provides power.
-          </p>
+            The aerodynamic force of the blades, like an airplane, converts wind energy into electricity. The air pressure on one side of the blade lowers when wind blows across it. Lift and drag are created by the difference in air pressure across the two sides of the blade. The lift force is greater than the drag force, causing the rotor to spin. The blades are attached to a drive shaft that rotates an electric generator, which provides power.          </p>
           <a href="wind.html" class="link-arrow">Find out more on Wind Energy</a>
         </div>
-        <picture data-aos="zoom-in-left">
+        <picture data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <source
             type="image/webp"
             srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
@@ -168,17 +180,22 @@
           <img class="feature__image" src="images/easy@2x.jpg" alt="" />
         </picture>
       </article>
+      
       <article class="grid grid--1x2 feature">
-        <div id="solar" class="feature__content"  data-aos="fade-right">
+        <div id="solar" class="feature__content"  data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
         <div class="feature__content">
-          <h3 class="feature__heading">HOW DO WE HARNESS ENERGY FROM THE SUN?</h3>
+          <h3 class="feature__heading">How do we harness power from the sun?</h3>
           <p>
-            In an hour and a half, the amount of sunshine that penetrates the earth's surface is enough to power the entire world's energy usage for a year. Photovoltaic (PV) panels or mirrors that concentrate solar radiation are used in solar technologies to convert sunlight into electrical energy. This energy can be converted into electricity or stored in a battery for long term usage.
+            In an hour and a half, the amount of sunlight that penetrates the earth's surface is enough to power the entire world's energy usage for a year. Photovoltaic (PV) panels are mirrors that concentrate solar radiation. They are used in solar technologies to convert sunlight into electrical energy. This energy will be converted into electricity, and stored in a battery for long term use.
           </p>
-          <a href="solar.html" class="link-arrow">Learn More about solar energy</a>
+          <a href="solar.html" class="link-arrow">Learn More about Solar energy</a>
         </div>
       </div>
-        <picture data-aos="zoom-in-right">
+        <picture data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <source
             type="image/webp"
             srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
@@ -193,15 +210,18 @@
     </div>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content" id="water" data-aos="swing">
+        <div class="feature__content" id="water" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
         <div class="feature__content">
-          <h3 class="feature__heading">HOW DO WE GET ENERGY FROM WATER?</h3>
+          <h3 class="feature__heading">How is energy produced with water></h3>
           <p>
-            Hydroelectric power stations are frequently built on or near a water source because water is the source of hydroelectric power. The amount of accessible energy in moving water is determined by the volume of the water flow and the change in elevation—or fall, as it is commonly known to as head—from one location to another. In general, the higher the head and the greater the water flow, the more electricity a hydropower plant can generate.</p>
-          <a href="#" class="link-arrow">Learn More on how to implement hydro power!</a>
+            Hydroelectric power stations are frequently built on or near water sources such as waterfalls, rivers, and artificial bodies of flowing water. The amount of accessible energy in moving water is determined by the volume of the water flow and the elevation change, as water is commonly known to head from one location to another. Head is the vertical height measured between the hydro intake water level and the water level at the point of discharge. In general, the higher the head, the greater the water flow, this increases the amount of electricity a hydropower plant can generate.</p>          <a href="hydro.html" class="link-arrow">Learn More on how to implement hydro power!</a>
         </div>
       </div>
-        <picture data-aos="zoom-in-left">
+        <picture data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <source
             type="image/webp"
             srcset="images/hydro.webp 1x, images/hydro@2x.webp 2x"
@@ -210,7 +230,7 @@
             type="image/jpg"
             srcset="images/hydro.jpg 1x, images/hydro@2x.jpg 2x"
           />
-          <img class="feature__image" src="images/hydro@2x.jpg" alt="" />
+          <img class="feature__image" src="images/hydro@2x.jpg" alt="Image of a Dam" />
         </picture>
       </article>
     </section>
@@ -219,7 +239,9 @@
         <h2>Cool Facts about Renewable Energy!</h2>
       </header>
       <div id="windmi" class="container grid grid--1x2">
-        <picture data-aos="fade-right" class="block-showcase__image">
+        <picture data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="block-showcase__image">
           <source
             type="image/webp"
             srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
@@ -237,8 +259,7 @@
               <div class="media__body">
                 <h3 class="media__title">Wind</h3>
                 <p>
-                  Turbines are becoming taller in order to reach higher in the atmosphere, where quicker, more consistent winds can be found. The higher you fly, the faster the winds will be and the more energy you'll be able to generate!
-                </p>
+                  Turbines are becoming taller in order to reach higher in the atmosphere, where quicker, more consistent winds can be found. The higher the turbine, the faster the winds will be, and the more energy it will be able to generate!                </p>
               </div>
             </div>
           </li>
@@ -250,7 +271,6 @@
                 </h3>
                 <p>
                   Hydropower costs less than most energy sources. States that get the majority of their electricity from hydropower, like Idaho, Washington, and Oregon, have energy bills that are lower than the rest of the country.</p>
-              </div>
             </div>
           </li>
           <li>
@@ -258,8 +278,8 @@
               <div class="media__body">
                 <h3 class="media__title">Solar</h3>
                 <p>
-                  WORLD HEALTH BENEFITS FROM SOLAR POWER
-                  According to Google's Project Sunroof, which combines data from Google Maps and Google Earth with 3D modeling and machine learning, 79 percent of all homes in America have rooftops that are "technically viable" for solar, meaning they have enough roof area and receive enough sunlight.                </p>
+                  World Health Benefits from solar power
+                  According to Google's Project Sunroof, which combines data from Google Maps and Google Earth with 3D modeling and machine learning, 79 percent of all homes in America have rooftops that are "technically viable" for solar, meaning they have enough roof area and receive enough sunlight.                  </p>
               </div>
             </div>
           </li>
@@ -276,7 +296,7 @@
               Follow this link to see my sources and citations used for this project!
             </p>
           </div>
-          <a href="#" class="btn btn--secondary btn--stretched">Click Me!</a>
+          <a href="citations.html" class="btn btn--secondary btn--stretched">Click Me!</a>
         </div>
       </div>
     </div>
@@ -285,69 +305,9 @@
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
           <div class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Lorem, ipsum dolor.</h2>
-            <svg class="icon icon--white collapsible__chevron">
-              <use href="images/sprite.svg#chevron"></use>
-            </svg>
-          </div>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li><a href="#">Lorem, ipsum.</a></li>
-              <li><a href="#">Lorem, ipsum dolor.</a></li>
-              <li><a href="#">Lorem.</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="collapsible footer__section">
-          <div class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Lorem</h2>
-            <svg class="icon icon--white collapsible__chevron">
-              <use href="images/sprite.svg#chevron"></use>
-            </svg>
-          </div>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li><a href="#">Lorem, ipsum.</a></li>
-              <li><a href="#">Lorem, ipsum.</a></li>
-              <li><a href="#">Lorem2</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="collapsible footer__section">
-          <div class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Lorem</h2>
-            <svg class="icon icon--white collapsible__chevron">
-              <use href="images/sprite.svg#chevron"></use>
-            </svg>
-          </div>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li><a href="#">Lorem, ipsum.</a></li>
-              <li><a href="#">Lorem, ipsum.</a></li>
-              <li><a href="#">Lorem, ipsum.</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="collapsible footer__section">
-          <div class="collapsible__header">
-            <h2 class="collapsible__heading footer__heading">Lorem</h2>
-            <svg class="icon icon--white collapsible__chevron">
-              <use href="images/sprite.svg#chevron"></use>
-            </svg>
-          </div>
-          <div class="collapsible__content">
-            <ul class="list">
-              <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
-              <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
-              <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
-            </ul>
-          </div>
-        </section>
-        <div class="footer__brand">
-          <img src="" alt="" />
-          <p class="footer__copyright">Lorem, ipsum dolor.</p>
-        </div>
       </div>
+    </div>
+      </section>
 
       </footer>
     <script src="js/main.js"></script>

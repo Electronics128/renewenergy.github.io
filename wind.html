@@ -20,19 +20,23 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/wind.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body onmousedown="return false" onselectstart="return false">
+    <body>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">&#129145</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="material-icons-outlined">
+      keyboard_capslock
+      </span></button>
 
     <div class="topnav" id="myTopnav">
       <a href="index.html" class="active">Home</a>
       <a href="solar.html">Solar</a>
       <a href="wind.html">Wind</a>
       <a href="hydro.html">Hydro</a>
-      <a href="#">Citations</a>
+      <a href="citations.html">Citations</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
@@ -79,29 +83,36 @@
       <header class="block__header">
         <h2>What Can Wind Turbines Do?</h2>
         <p>
-          Small wind electric systems are one of the most cost-effective home-based renewable energy systems — with zero emissions and pollution — if you have adequate wind resource in your area and the scenario is suitable. These systems can provide lifetime savings!        </p>
-      </header>
-      <article class="grid grid--1x2 feature">
-        <div class="feature__content" id="wind" data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">
+          Wind electric systems are one of the most cost-effective, home-based, renewable energy systems with zero carbon emissions. These systems can provide lifetime savings!       
+          <article class="grid grid--1x2 feature">
+        <div class="feature__content" id="wind">
           <h3 class="feature__heading">How Wind Energy has evolved</h3>
           <p>
-            The Wind Energy Technologies Office (WETO) collaborates with industries to enhance the performance and resilience of next-generation wind technologies while minimizing wind power costs. The office's research works have benefited in increasing the average throughput (a measurement of electricity generation production) for wind turbines manufactured prior to 1998 from 22% to over 35% currently, up from 30% during the 2000's. Wind energy costs in the United States have plummeted from over 55 cents per kilowatt-hour (kWh) in 1980 to an average of under 3 cents per kWh currently. Wind industry technologies must keep progressing in order to secure future industry size, building on previous triumphs to improve reliability, enhance capacity factors, and reduce costs.          </p>
+            The Wind Energy Technologies Office (WETO) collaborates with industries to enhance the performance and resilience of next-generation wind technologies while minimizing wind power costs.
+          </p>          
         </div>
-        <picture data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">
-          <source
-            type="image/webp"
-            srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
-          />
-          <source
-            type="image/jpg"
-            srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
-          />
-          <img class="feature__image" src="images/easy@2x.jpg" alt="" />
-        </picture>
+        <section style="overflow-x: auto;">
+          <div style="overflow-x: auto;">
+            <table style="overflow-x: auto;">
+              <tr>
+                <th>Year</th>
+                <th>Electricity generated</th>
+                <th>Avg. Energy cost (kWh)</th>
+              </tr>
+              <tr>
+                <td>Before 2000's</td>
+                <td>Less-than 22%</td>
+                <td>55 cents per kWh</td>
+              </tr>
+              <tr>
+                <td>After 2000's</td>
+                <td>More-than 35%</td>
+                <td>3 cents per kWh</td>
+              </tr>
+            </table>
+          </div>
+          
+        </section>
       </article>
       <article class="grid grid--1x2 feature">
         <div id="solar" class="feature__content"  data-aos="fade-left"
@@ -110,8 +121,15 @@
         <div class="feature__content">
           <h3 class="feature__heading">How to Plan for Small Electric Wind Systems</h3>
           <p>
-            You'll need to evaluate your site's average annual wind speed, or wind resource, to assist determine its feasibility for a small electric wind system. Because of local geography, local structures, and vegetation affects on wind speed and flow, the wind resource can vary dramatically over a 1 square mile area. To determine whether your location has enough wind resource to warrant calling an installer for a resource estimate, review a wind resource map, which might show whether you reside in a suitable wind resource region.You should examine local zoning rules and community covenants before investing in a small wind energy installation. Contact the local building inspector, board of supervisors, and/or planning board to learn about zoning regulations in your region. They can inform you if you'll need a building permit and provide you a list of everything you'll need. Your neighbors or homeowners' association may protest to a wind turbine that limits their view, in addition to zoning difficulties. They could also be bothered by noise. The majority of zoning and aesthetic issues can be resolved by providing objective data.
+            To plan for a Wind System, you must consider the following
           </p>
+          <ul class="b">
+            <li>You'll need to evaluate your site's average annual wind speed</li>
+            <li>Examine your local geography, local structures, and vegetation (these factors will affect wind speed and flow</li>
+            <li>You might want to call a installer for a estimate and to know whether your location is eligible</li>
+            <li>Review Local rules and regulations</li>
+            <li>Contact a local building inspector and or a board of supervisors</li>
+          </ul>
         </div>
       </div>
         <picture data-aos="fade-right"
@@ -125,7 +143,7 @@
             type="image/jpg"
             srcset="images/planning.jpg 1x, images/planning@2x.jpg 2x"
           />
-          <img class="feature__image" src="images/planning@2x.jpg" alt="" />
+          <img class="feature__image" src="../images/planning@2x.jpg" alt="" />
         </picture>
       </article>
     </div>
@@ -137,9 +155,9 @@
         <div class="feature__content">
           <h3 class="feature__heading">Maintenance</h3>
           <p>
-            You should hire a professional installation to install your system. Additional services, such as permitting, may be provided by a reputable installer. Check to see if the installer is a licensed electrician, and ask for and check references. You should also contact the Better Business Bureau. A small wind electric system can last up to 20 years or more with proper installation and maintenance. For Example you may consider these simple maintenance techniques to enhance your small wind system.
-            <ul>
-             <li> Bolts and electrical connections should be checked and tightened as needed.</li>
+            You should hire a professional contractor to install your system. Additional services, such as permitting, may be provided by a reputable installer. Check to see if the installer is a licensed electrician, and check for reliable credentials. You should also contact the Better Business Bureau. A wind-electric system can last 20 years or more with proper installation and maintenance. For example, you may consider these simple maintenance techniques to enhance your small wind system.            
+            <ul class="b">
+              <li> Bolts and electrical connections should be checked and tightened as needed.</li>
               <li>Checking for rust on machinery and ensuring that the guy wires are properly tensioned</li>
               <li>If necessary, inspect and replace any worn leading edge tape on the turbine blades.</li>
               <li>As needed, replace components such as turbine blades and/or bearings.</li>

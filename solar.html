@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,19 +18,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=MuseoModerno:wght@800&family=Poppins:wght@400;700&family=Sora:wght@500&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/solar.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body onmousedown="return false" onselectstart="return false">
-    
-    <button onclick="topFunction()" id="myBtn" title="Go to top">&#129145</button>
+ <body onmousedown="return false" onselectstart="return false">
+<body>    
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="material-icons-outlined">
+      keyboard_capslock
+      </span></button>
 
       <div class="topnav" id="myTopnav">
         <a href="index.html" class="active">Home</a>
         <a href="solar.html">Solar</a>
         <a href="wind.html">Wind</a>
         <a href="hydro.html">Hydro</a>
-        <a href="#">Citations</a>
+        <a href="citations.html">Citations</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -67,20 +69,15 @@
       <header class="block__header">
         <h2>What Can Solar Panels Do?</h2>
         <p>
-          Solar photovoltaic (PV) systems, often known as solar electric systems, collect and convert sunlight energy into electricity. PV systems may power everything from lights and appliances to an electric vehicle in your home.
-        </p>
+          Solar photovoltaic (PV) systems, often known as solar electric systems, collect and convert sunlight energy into electricity. PV systems may power everything from lights and appliances to an electric vehicle in your home.        </p>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content" id="wind" data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine>
+        <div class="feature__content" id="wind">
           <h3 class="feature__heading">History of Solar Energy</h3>
           <p>
-            We must think solar panels are like laptops, for example think about laptops that were built in the early 2000's, however back then laptops were not as powerful and they were very expensive, this is just like solar panels, at first they are very expensive and their efficinecy does not match either the wind or hydropower. therefore as time progresses the efficinecy of the Photovoltaic cells will increase over time.
-        </p>
+            The first solar panels, invented in the 1800s, were less than one percent efficient, not nearly enough to make them a reliable energy source. It wasn’t until 1954 that Bell Labs invented the first useful silicon solar panel, which was about six percent efficient. Since then, solar PV technology has evolved at a rapid pace. Manufacturers have been able to create prototype solar panels that are over 30 percent efficient!
+          </p>        
         </div>
-        <picture data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine>
+        <picture>
           <source
             type="image/webp"
             srcset="images/solar2.webp 1x, images/solar2@2x.webp 2x"
@@ -89,7 +86,7 @@
             type="image/jpg"
             srcset="images/solar2.jpg 1x, images/solar2@2x.jpg 2x"
           />
-          <img class="feature__image" src="images/solar2@2x.jpg" alt="" />
+          <img class="feature__image" src="../images/solar2@2x.jpg" alt="" />
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
@@ -99,7 +96,7 @@
         <div class="feature__content">
           <h3 class="feature__heading">How to find the efficiency of Solar Electric Systems</h3>
           <p>
-           Solar electric systems consist of three main parts, The panels themselves, a battery, and a inverter, each of these components in a solar electric system has a purpose. To calculate the efficiency of the solar cell, you must use:</p>
+           To calculate the efficiency of a solar panel, you must use:</p>
            
            <p class="formula">Efficiency (%) = (Pmax ÷ Area) ÷ (1000) x 100%</p>
 
@@ -120,7 +117,7 @@
             type="image/jpg"
             srcset="images/solar.png 1x, images/solar@2x.png 2x"
           />
-          <img class="feature__image" src="images/solar@2x.png" alt="" />
+          <img class="feature__image" src="../images/solar@2x.png" alt="" />
         </picture>
       </article>
     </div>
@@ -134,12 +131,12 @@
           <p>
             Hire a qualified solar contractor to conduct a detailed preventative maintenance inspection annually or bi-annually. A detailed inspection will include:
           </p>
-            <ul>
-              <li class="solarMain">A visual and mechanical inspection of the solar array including roof attachment points, torque checks, wiring inspection</li>
-              <li class="solarMain">An electrical inspection to confirm that all the strings of your solar array are operating</li>
-              <li class="solarMain">Interior inspection of all devices, boxes, inverters, switches, etc.</li>
-              <li class="solarMain">Battery maintenance and/or detailed inspection, if applicable</li>
-              <li class="solarMain">Infrared inspection of electrical connections looking for loose connections and hot spots</li>
+            <ul class="solarMain">
+              <li class="solarMain">A visual and mechanical inspection of the solar array</li>
+              <li class="solarMain">An electrical inspection</li>
+              <li class="solarMain">Interior inspection</li>
+              <li class="solarMain">Battery maintenance</li>
+              <li class="solarMain">Infrared inspection of electrical connections</li>
             </ul>      
            </p>
         </div>
@@ -155,18 +152,14 @@
             type="image/jpg"
             srcset="images/solar1.jpg 1x, images/solar1@2x.jpg 2x"
           />
-          <img class="feature__image" src="images/solar1@2x.webp" alt="" />
+          <img class="feature__image" src="../images/solar1@2x.webp" alt="" />
         </picture>
       </article>
-    </section>
+    </section> 
 
 
     <footer class="block block--dark footer">
-      <div class="container grid footer__sections">
-        <section class="collapsible collapsible--expanded footer__section">
-          
-          </div>
-        </section>
+     
       </footer>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
